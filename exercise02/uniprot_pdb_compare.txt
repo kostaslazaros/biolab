@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+|     PDB DATA FOR DHFR(human vs lactobacillus casei)                         |
+------------------------------------------------------------------------------|
+| For lactobacillus casei:             | For human:                           |
+|			               |                                      |
+| [1]id/accession number: 3DFR(P00381) | [1]id/accession number: 4KD7(P00374) |
+|		                       |                                      |
+| [2]sequence length: 162              | [2]sequence length: 186              |
+|		                       |                                      |
+| [3]chains: A		               | [3]chains: A, B                      |
+|			               |                                      |
+| [4]total weight: 19.55 kDa           | [4]total weight: 45.29 kDa           |
+|                                      |                                      |
+| [5]unique protein chains: 1          | [5]unique protein chains: 1          |
+|                                      |                                      |
+| [6]atom count: 1639                  | [6]atom count: 3385                  |
+|			               |				      | 
+| [7]residue count: 162                | [7]residue count: 372                |
+|                                      |                                      |  
+| [8]method: X-RAY DIFFRACTION         | [8]Method: X-RAY DIFFRACTION         |
+|-----------------------------------------------------------------------------|
+| residue count and sequence length                                           |
+| differ in the human case beause of buried residues?                         |
+|-----------------------------------------------------------------------------|

@@ -1,0 +1,18 @@
+------------------------------------------------------------------------
+|     CATH DATA FOR DHFR(human vs lactobacillus casei)                 |
+-----------------------------------------------------------------------|
+| For lactobacillus casei:     | For human:                            |
+|			       |                                       |
+| [1]accession number: 3DFR    | [1]accession number: 4KD7             |
+|		               |                                       |
+| [2]superfamily: 3.40.430.10  | [2]superfamily: 3.40.430.10           |
+|		               |                                       |
+| [3]number of domains: 1      | [3]number of domains: 2               |
+|			       |                                       |
+| [4]name of domain: 3dfrA00   | [4]name of domains: 4kd7A00, 4kd7B00  |
+|                              |                                       |
+|----------------------------------------------------------------------|
+|In scop we have 2 domains for lc and 4 for the human equivalent.      |
+|That is because the human counterpart has A and B chains only A for lc|
+|They are also in the same pfam family (DHFR1)(PF00186)                |
+|----------------------------------------------------------------------|
