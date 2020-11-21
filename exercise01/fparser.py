@@ -93,9 +93,8 @@ def dic_contains(dic1):
                 break
 
 
-if __name__ == '__main__':
-    # def driver():
-    proteins = parse('g_proteins.txt')
+def print_results(filename):
+    proteins = parse(filename)
     print('┌----------------------------------------------------------------------------------------┐')
     print('| entry\t\t', ' prot_name\t\t',
           'cover_status\t\t', 'cross_referenced_regions|')
@@ -115,3 +114,7 @@ if __name__ == '__main__':
         print(
             f"| {protein['entry']:15} {protein['name']:26} {protein['cover_status']:32} {protein['number_of_cross_referenced_regions']}\t\t |")
     print('└----------------------------------------------------------------------------------------┘')
+
+
+if __name__ == '__main__':
+    print_results('g_proteins.txt')
