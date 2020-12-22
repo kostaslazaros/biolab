@@ -26,36 +26,6 @@ def make_trans_sequence(data):
     return final
 
 
-# def parse_horiz(fname):
-#     """Parse file from psi-pred horiz file type"""
-#     res = ''
-#     with open(fname) as fil:
-#         for lin in fil.readlines():
-#             if lin.startswith('Pred'):
-#                 res += lin.strip()[6:]
-#     return res
-
-
-# def parse_jpred(fname):
-#     """Parse file from jpred prediction"""
-#     res = ''
-#     with open(fname) as fil:
-#         for lin in fil.readlines():
-#             if lin.startswith('PRED'):
-#                 res += lin.strip()[6:]
-#     return res
-
-
-# def parse_porter(fname):
-#     """Parse file from porter prediction"""
-#     res = ''
-#     with open(fname) as fil:
-#         for lin in fil.readlines():
-#             if lin.startswith('PRED'):
-#                 res += lin.strip()[6:]
-#     return res
-
-
 def parse_real(fname):
     """Parse file with uniprot/validated real data"""
     res = []
