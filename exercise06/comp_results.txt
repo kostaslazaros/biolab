@@ -1,0 +1,107 @@
+Q3 factor results per algorithm for ompa protein
+Q3(jpred)    : 86.22
+Q3(porter)   : 79.29
+Q3(psi-pred) : 76.59
+==================================================
+
+Analysis for protein: ompa and algorithm: jpred
+
+Secondary structure type: H  q: 93.35
+True positive :   50     False positive:    2
+False negative:   21      True negative:  273
+
+Secondary structure type: E  q: 70.81
+True positive :   60     False positive:    4
+False negative:   97      True negative:  185
+
+Secondary structure type: C  q: 94.51
+True positive :    0     False positive:    0
+False negative:   19      True negative:  327
+
+--------------------------------------------------
+
+Analysis for protein: ompa and algorithm: porter
+
+Secondary structure type: H  q: 93.64
+True positive :   61     False positive:   12
+False negative:   10      True negative:  263
+
+Secondary structure type: E  q: 83.24
+True positive :  115     False positive:   16
+False negative:   42      True negative:  173
+
+Secondary structure type: C  q: 60.98
+True positive :   13     False positive:  129
+False negative:    6      True negative:  198
+
+--------------------------------------------------
+
+Analysis for protein: ompa and algorithm: psi-pred
+
+Secondary structure type: H  q: 93.06
+True positive :   59     False positive:   12
+False negative:   12      True negative:  263
+
+Secondary structure type: E  q: 82.08
+True positive :  103     False positive:    8
+False negative:   54      True negative:  181
+
+Secondary structure type: C  q: 54.62
+True positive :   13     False positive:  151
+False negative:    6      True negative:  176
+
+==================================================
+
+Q3 factor results per algorithm for malic protein
+Q3(jpred)    : 88.65
+Q3(porter)   : 78.49
+Q3(psi-pred) : 79.32
+==================================================
+
+Analysis for protein: malic and algorithm: jpred
+
+Secondary structure type: H  q: 78.85
+True positive :  193     False positive:   44
+False negative:   92      True negative:  314
+
+Secondary structure type: E  q: 90.82
+True positive :   45     False positive:   31
+False negative:   28      True negative:  539
+
+Secondary structure type: C  q: 96.27
+True positive :    0     False positive:    0
+False negative:   24      True negative:  619
+
+--------------------------------------------------
+
+Analysis for protein: malic and algorithm: porter
+
+Secondary structure type: H  q: 87.56
+True positive :  244     False positive:   39
+False negative:   41      True negative:  319
+
+Secondary structure type: E  q: 93.78
+True positive :   44     False positive:   11
+False negative:   29      True negative:  559
+
+Secondary structure type: C  q: 54.12
+True positive :   17     False positive:  288
+False negative:    7      True negative:  331
+
+--------------------------------------------------
+
+Analysis for protein: malic and algorithm: psi-pred
+
+Secondary structure type: H  q: 88.96
+True positive :  249     False positive:   35
+False negative:   36      True negative:  323
+
+Secondary structure type: E  q: 93.62
+True positive :   45     False positive:   13
+False negative:   28      True negative:  557
+
+Secondary structure type: C  q: 55.37
+True positive :   19     False positive:  282
+False negative:    5      True negative:  337
+
+==================================================
