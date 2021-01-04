@@ -1,3 +1,7 @@
+from openpyxl import Workbook
+from openpyxl.styles import Alignment
+
+
 def parse(file_name):
     proteins = []
     di1 = {}
@@ -116,5 +120,46 @@ def print_results(filename):
     print('└----------------------------------------------------------------------------------------┘')
 
 
+def write_xl(protein_file, xlfile):
+    proteins = parse(protein_file)
+    wb = Workbook()
+    sheet = wb.active
+    sheet["A1"] = "Entry"
+    sheet["B1"] = "Protein name"
+    sheet["C1"] = "Cover status"
+    sheet["D1"] = "Number of cross referenced regions"
+    sheet["A1"].alignment = Alignment(
+        wrap_text=True, vertical='center', horizontal='center')
+    sheet["B1"].alignment = Alignment(
+        wrap_text=True, vertical='center', horizontal='center')
+    sheet["C1"].alignment = Alignment(
+        wrap_text=True, vertical='center', horizontal='center')
+    sheet["D1"].alignment = Alignment(
+        wrap_text=True, vertical='center', horizontal='center')
+    sheet.row_dimensions[1].height = 70
+    sheet.column_dimensions['A'].width = 12
+    sheet.column_dimensions['B'].width = 18
+    sheet.column_dimensions['C'].width = 8
+    sheet.column_dimensions['D'].width = 9
+    for i, protein in enumerate(proteins):
+        dic_contains(protein)
+        lhreg = len(protein['hreg'])
+        lcref = sum([p['result'] for p in protein['hreg']])
+        protein['number_of_transmembrane_regions'] = lhreg
+        protein['number_of_cross_referenced_regions'] = lcref
+        if lcref == 0:
+            protein['cover_status'] = 'none'
+        elif lhreg == lcref:
+            protein['cover_status'] = 'all'
+        else:
+            protein['cover_status'] = 'some'
+        sheet[f"A{i+2}"] = protein['entry']
+        sheet[f"B{i+2}"] = protein['name']
+        sheet[f"C{i+2}"] = protein['cover_status']
+        sheet[f"D{i+2}"] = protein['number_of_cross_referenced_regions']
+    wb.save(filename=xlfile)
+
+
 if __name__ == '__main__':
     print_results('g_proteins.txt')
+    write_xl('g_proteins.txt', 'g_protein_results.xlsx')
